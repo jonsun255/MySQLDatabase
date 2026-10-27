@@ -8,3 +8,6 @@ The script.sql file contains the new additions to the database.
 operation_script.sql file, contains all the different functions.
 
 in addition, there are several pictures to explain the outputs of the different queries
+
+
+<img width="998" height="599" alt="Image" src="https://github.com/user-attachments/assets/957ca667-01ad-4f5b-bb96-b475cce14aaa" />
