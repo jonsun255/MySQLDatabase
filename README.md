@@ -11,8 +11,8 @@ operation_script.sql file, contains all the different functions.
 
 in addition, there are several pictures to explain the outputs of the different queries
 
-**Normalization review
-**
+**Normalization review**
+
 Looking at 1NF, each cell only contains one single value, and each row is uniquely identified. Therefore we can assume the first normalization form is accomplished.
 
 Looking at an example in the country_language table, you have a composite key which consists of country_code and language.
