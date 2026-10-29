@@ -3,13 +3,8 @@ A repository for database managmenet
 
 **In this repository, i've decided to use the standard WORLD sample database**
 
-In this task, i've decided to use the world database and populate it with new norwegian cities and languages/dialects.
-All my operations revolve around the new city inserts.
 
-The script.sql file contains the new additions to the database.
-operation_script.sql file, contains all the different functions.
-
-in addition, there are several pictures to explain the outputs of the different queries
+there are several pictures to explain the outputs of the different queries
 
 **Normalization review**
 
@@ -50,3 +45,9 @@ This is the population between transactions, where Stavanger has been updated wi
 
 This is the final result of the transaction, where both Stavanger and Trondheim have been updated with new population.
 <img width="694" height="331" alt="Image" src="https://github.com/user-attachments/assets/8682d71c-2857-4544-b93b-309fd917b9b2" />
+
+Since im using postgreSQL through a docker container, i've used the docker commands to create a backup.
+<img width="1030" height="83" alt="Image" src="https://github.com/user-attachments/assets/0e290fef-3f10-4093-8662-63970dbc8a3c" />
+
+This created the backup file used to restore the database.
+<img width="688" height="408" alt="Image" src="https://github.com/user-attachments/assets/b8a90587-ad96-4fdb-bf8e-a186ee5b7187" />
