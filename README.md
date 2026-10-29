@@ -36,3 +36,6 @@ Even though i dont think they depend on each other, for this specific table, the
 <img width="924" height="298" alt="Image" src="https://github.com/user-attachments/assets/02a0ea5d-966c-4df0-b637-716d6541ea70" />
 
 <img width="218" height="293" alt="Image" src="https://github.com/user-attachments/assets/4c2b177c-30a6-44d8-9a50-1ced0e43b247" />
+
+Looking at the results from the query plan, you can see that the bitmap index scan has reduced the cost drastically.
+<img width="701" height="879" alt="Image" src="https://github.com/user-attachments/assets/367bbde1-7b36-4e45-b63b-267d020cff7e" />
