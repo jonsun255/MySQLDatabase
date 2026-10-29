@@ -39,3 +39,14 @@ Even though i dont think they depend on each other, for this specific table, the
 
 Looking at the results from the query plan, you can see that the bitmap index scan has reduced the cost drastically.
 <img width="701" height="879" alt="Image" src="https://github.com/user-attachments/assets/367bbde1-7b36-4e45-b63b-267d020cff7e" />
+
+As an example for a transaction, i've imagined that 5000 people moved from Trondheim to Stavanger.
+
+This is the population before the transaction
+<img width="663" height="269" alt="Image" src="https://github.com/user-attachments/assets/3b232afb-773c-465d-b8b7-f7d76ad9e267" />
+
+This is the population between transactions, where Stavanger has been updated with 5000 new people
+<img width="668" height="316" alt="Image" src="https://github.com/user-attachments/assets/c9641f67-f422-4ea3-b17b-060b150b3170" />
+
+This is the final result of the transaction, where both Stavanger and Trondheim have been updated with new population.
+<img width="694" height="331" alt="Image" src="https://github.com/user-attachments/assets/8682d71c-2857-4544-b93b-309fd917b9b2" />
