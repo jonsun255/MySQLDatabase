@@ -32,8 +32,12 @@ Even though i dont think they depend on each other, for this specific table, the
 
 <img width="218" height="293" alt="Image" src="https://github.com/user-attachments/assets/4c2b177c-30a6-44d8-9a50-1ced0e43b247" />
 
-Looking at the results from the query plan, you can see that the bitmap index scan has reduced the cost drastically.
-<img width="701" height="879" alt="Image" src="https://github.com/user-attachments/assets/367bbde1-7b36-4e45-b63b-267d020cff7e" />
+The first image is the sequential search without imaging, where you can see that the cost is aproximated to 83 in total.
+While it expects five rows of 31 byte.
+<img width="1060" height="911" alt="Image" src="https://github.com/user-attachments/assets/7fe44714-ee6e-4878-ad1f-e9edf78f20b0" />
+After the index, you can see the start cost has gotten slightly higher, but the total cost has fallen down to 17.
+While still expecting to select five rows of 31 byte.
+<img width="1060" height="913" alt="Image" src="https://github.com/user-attachments/assets/173f9a8d-c014-4909-91a8-3a9672841030" />
 
 As an example for a transaction, i've imagined that 5000 people moved from Trondheim to Stavanger.
 
