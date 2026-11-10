@@ -51,3 +51,26 @@ Since im using postgreSQL through a docker container, i've used the docker comma
 
 This created the backup file used to restore the database.
 <img width="688" height="408" alt="Image" src="https://github.com/user-attachments/assets/b8a90587-ad96-4fdb-bf8e-a186ee5b7187" />
+
+These are the commands i used for creating the backup of my database.
+I used -d postgres, because i named my database postgres and not world in my case
+**docker exec ONF-Postgres pg_dump -U postgres -d postgres -F c -f /tmp/world_backup.dump**
+Here i am copying the backup file to the container
+**docker cp ONF-Postgres:/tmp/world_backup.dump**
+This command line copies the backup file from my container, to my folder.
+
+Using select count and current database, im showing the results from the postgres (world) database.
+<img width="1045" height="430" alt="Image" src="https://github.com/user-attachments/assets/858fd890-e1ac-4b28-a679-10df45f75e94" />
+<img width="1009" height="883" alt="Image" src="https://github.com/user-attachments/assets/361c7891-8f61-435c-aa04-c9c9a9b71c99" />
+
+Before running this command, i created a new database called world_restored.
+**docker exec ONF-Postgres pg_restore -U postgres -d world_restored /tmp/world_backup.dump**
+Then i used this command to copy the backup from my container, into the new database.
+
+The value count remains the same after the backup
+<img width="1034" height="914" alt="Image" src="https://github.com/user-attachments/assets/74329767-fb4d-4f8e-9377-f98874e80a7a" />
+<img width="1009" height="914" alt="Image" src="https://github.com/user-attachments/assets/4ccc8d27-4a52-4146-95ee-089b3e7f98f1" />
+
+
+
+
