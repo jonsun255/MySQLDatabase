@@ -75,6 +75,16 @@ The value count remains the same after the backup
 <img width="1034" height="914" alt="Image" src="https://github.com/user-attachments/assets/74329767-fb4d-4f8e-9377-f98874e80a7a" />
 <img width="1009" height="914" alt="Image" src="https://github.com/user-attachments/assets/4ccc8d27-4a52-4146-95ee-089b3e7f98f1" />
 
+I have created two roles: one called city reader, that can only read the city table, 
+and one called language specialist. That can select, insert and update the country_language table, but only that table.
+<img width="1043" height="920" alt="Image" src="https://github.com/user-attachments/assets/9a79571f-3325-4759-b6f2-9901b70a2c7f" />
+The language specialist is able to update the table.
+<img width="1393" height="873" alt="Image" src="https://github.com/user-attachments/assets/67739af5-85cf-474d-9fdc-b6d75b2c61ad" />
+But when i try to select the country table. The access is denied.
 
+The city reader is able to view the city table.
+<img width="1068" height="929" alt="Image" src="https://github.com/user-attachments/assets/6d535fee-594f-42bc-96a1-e26a763b6741" />
+But gets denied when it tries to read the country table.
+<img width="1452" height="901" alt="Image" src="https://github.com/user-attachments/assets/31eea2ca-11bf-49f1-a85d-5c14197d4f4b" />
 
 
